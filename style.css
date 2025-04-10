@@ -1,1 +1,65 @@
+:root {
+  --primary-green: #2ecc71;
+  --dark-green:   #27ae60;
+  --bg-light:     #f4fff4;
+  --text-dark:    #1a1a1a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+.site-header {
+  background: var(--primary-green);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo { height: 50px; }
+.main-nav a {
+  color: white; text-decoration: none; margin: 0 1rem;
+}
+.main-nav a:hover { text-decoration: underline; }
+.hero {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cta {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.cta:hover { background: var(--dark-green); }
+.content { padding: 2rem; max-width: 900px; margin: auto; }
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 1.5rem;
+}
+.aircraft-card {
+  background: white; border-radius: 6px;
+  padding: 1rem; text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.aircraft-card:hover { transform: translateY(-5px); }
+.site-footer {
+  background: var(--primary-green);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 
