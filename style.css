@@ -63,18 +63,17 @@ body {
   margin-top: 2rem;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+   .mySlides img {
+  border-radius: 20px;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-  .slideshow-container .mySlides img {
-  border-radius: 15px;
 }
   
 }
