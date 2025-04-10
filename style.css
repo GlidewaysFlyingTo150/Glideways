@@ -67,15 +67,16 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
-   .mySlides img {
+  .mySlides img {
   border-radius: 20px;
+  width: 100%;
+  heigth: 100%;
+  object-fit: cover
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
-  
 }
 
 /* Next & previous buttons */
