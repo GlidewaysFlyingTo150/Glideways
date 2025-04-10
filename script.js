@@ -27,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-let slideIndex = 0;
+let slideIndexAuto = 0;
 autoShowSlides();
 
 function autoShowSlides() {
@@ -37,9 +37,9 @@ function autoShowSlides() {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slideIndexAuto++;
+  if (slideIndexAuto > slides.length) {slideIndexAuto = 1}
+  slides[slideIndexAuto-1].style.display = "block";
+  dots[slideIndexAuto-1].className += " active";
   setTimeout(autoShowSlides, 5000); // Change image every 5 seconds
 }
