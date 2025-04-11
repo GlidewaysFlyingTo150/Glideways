@@ -18,12 +18,19 @@ body {
 }
 
 /* Header */
+
+@media (max-width: 768) {
+  .logo-link img{
+    height: 40px;
+  }    
+
 .site-header {
-  background: var(--primary-green);
-  padding: 1rem;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: var(--primary-green);
+  padding: 0 1rem;
 }
 
 .logo {
