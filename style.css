@@ -4,8 +4,11 @@
   --bg-light:     #f4fff4;
   --text-dark:    #1a1a1a;
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--bg-light);
@@ -18,9 +21,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.logo { height: 50px; }
+.logo { height: 50px; 
+}
 .main-nav a {
-  color: white; text-decoration: none; margin: 0 1rem;
+  color: white; 
+  text-decoration: none; 
+  margin: 0 1rem;
 }
 .main-nav a:hover { text-decoration: underline; }
 .hero {
@@ -67,16 +73,15 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  .mySlides img {
+}
+.mySlides {
+  display: none;
+}
+.mySlides img {
   border-radius: 20px;
   width: 100%;
   heigth: 100%;
   object-fit: cover
-}
-
-.mySlides {
-  display: none;
-}
 }
 
 /* Next & previous buttons */
