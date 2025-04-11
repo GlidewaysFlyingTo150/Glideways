@@ -4,31 +4,41 @@
   --bg-light:     #f4fff4;
   --text-dark:    #1a1a1a;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--bg-light);
   color: var(--text-dark);
 }
+
 .site-header {
   background: var(--primary-green);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.logo { height: 50px; 
+
+.logo {
+  height: 40px;
 }
+
 .main-nav a {
-  color: white; 
-  text-decoration: none; 
+  color: white;
+  text-decoration: none;
   margin: 0 1rem;
 }
-.main-nav a:hover { text-decoration: underline; }
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
 .hero {
   background: white;
   margin: 2rem auto;
@@ -38,6 +48,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 .cta {
   background: var(--primary-green);
   color: white;
@@ -47,20 +58,36 @@ body {
   cursor: pointer;
   transition: background 0.3s;
 }
-.cta:hover { background: var(--dark-green); }
-.content { padding: 2rem; max-width: 900px; margin: auto; }
+
+.cta:hover {
+  background: var(--dark-green);
+}
+
+.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
 .fleet-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
   gap: 1.5rem;
 }
+
 .aircraft-card {
-  background: white; border-radius: 6px;
-  padding: 1rem; text-align: center;
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
-.aircraft-card:hover { transform: translateY(-5px); }
+
+.aircraft-card:hover {
+  transform: translateY(-5px);
+}
+
 .site-footer {
   background: var(--primary-green);
   color: white;
@@ -74,14 +101,16 @@ body {
   position: relative;
   margin: auto;
 }
+
 .mySlides {
   display: none;
 }
+
 .mySlides img {
   border-radius: 20px;
   width: 100%;
-  heigth: 100%;
-  object-fit: cover
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -133,3 +162,9 @@ body {
   from {opacity: .5}
   to {opacity: 1}
 }
+
+.about-section {
+  margin-top: 2rem;
+  padding: 1
+::contentReference[oaicite:0]{index=0}
+ 
