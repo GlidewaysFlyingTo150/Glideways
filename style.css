@@ -19,7 +19,7 @@ body {
 
 .site-header {
   background: var(--primary-green);
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
