@@ -17,17 +17,17 @@ body {
   color: var(--text-dark);
 }
 
-/* Header Styling */
+/* Header */
 .site-header {
   background: var(--primary-green);
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-link img {
-  height: 40px;
+.logo {
+  height: 50px;
 }
 
 .main-nav a {
@@ -40,14 +40,70 @@ body {
   text-decoration: underline;
 }
 
-/* Content Styling */
+/* Footer */
+.site-footer {
+  background: var(--primary-green);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Homepage Hero Section */
+.hero {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Call-to-Action Button */
+.cta {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: var(--dark-green);
+}
+
+/* Content Wrapper */
 .content {
   padding: 2rem;
   max-width: 900px;
   margin: auto;
 }
 
-/* About Section Styling */
+/* Fleet Grid */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Aircraft Card */
+.aircraft-card {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.aircraft-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About Page Sections */
 .about-section {
   margin-top: 2rem;
   padding: 1rem;
@@ -69,11 +125,71 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Footer Styling */
-.site-footer {
-  background: var(--primary-green);
+/* Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Next & Previous Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
   color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
 }
