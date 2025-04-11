@@ -24,20 +24,31 @@
     .about-section ul li {
       margin-bottom: 0.5rem;
     }
-    .site-header {
+ body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+.site-header {
   background: var(--primary-green);
-  padding: 0.5rem 1rem; /* Reduced padding */
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px; /* Set a fixed height */
 }
-.site-header img {
-  height: 40px; /* Adjust logo size */
-}
+.logo { height: 50px; }
 .main-nav a {
-  font-size: 1rem; /* Adjust font size if needed */
-  margin: 0 0.5rem; /* Adjust spacing between links */
+  color: white; text-decoration: none; margin: 0 1rem;
+}
+.main-nav a:hover { text-decoration: underline; }
+.hero {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
   </style>
 </head>
