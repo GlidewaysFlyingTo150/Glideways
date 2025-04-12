@@ -68,11 +68,11 @@ body {
   background: white;
   margin: 2rem auto;
   padding: 2rem;
-  max-width: 800px;
+  width: 800px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  height: 161px;
+  height: 181px;
 }
 
 .cta {
@@ -176,7 +176,7 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
