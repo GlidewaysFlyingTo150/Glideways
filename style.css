@@ -110,13 +110,14 @@ body {
 /* About Page Sections */
 .about-section {
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   max-width: 600px;
   margin: 10 auto;
   text-align: center;
+  margin: 2rem auto;
 }
 
 .about-section h3 {
