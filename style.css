@@ -68,11 +68,11 @@ body {
   background: white;
   margin: 2rem auto;
   padding: 2rem;
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  height: 181px;
+  height: 161px;
 }
 
 .cta {
@@ -115,9 +115,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   max-width: 600px;
-  margin: 10 auto;
-  text-align: center;
   margin: 2rem auto;
+  text-align: center;
 }
 
 .about-section h3 {
@@ -177,7 +176,7 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 4px;
+  margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
