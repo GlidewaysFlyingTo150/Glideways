@@ -1,8 +1,8 @@
 :root {
   --primary-green: #2ecc71;
-  --dark-green: #27ae60;
-  --bg-light: #f4fff4;
-  --text-dark: #1a1a1a;
+  --dark-green:   #27ae60;
+  --bg-light:     #f4fff4;
+  --text-dark:    #1a1a1a;
 }
 
 * {
@@ -24,6 +24,7 @@ body {
   flex-direction: column;
 }
 
+/* Header */
 .site-header {
   height: 75px;
   display: flex;
@@ -36,7 +37,6 @@ body {
 .logo-link img {
   height: 50px;
   width: auto;
-  max-height: 100%;
   object-fit: contain;
 }
 
@@ -50,13 +50,15 @@ body {
   text-decoration: underline;
 }
 
+/* Main content grows to push footer down */
 .content {
   flex: 1;
   padding: 2rem;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
 
+/* Footer */
 .site-footer {
   background: var(--primary-green);
   color: white;
@@ -64,17 +66,19 @@ body {
   padding: 1rem;
 }
 
+/* Homepage Hero Section */
 .hero {
   background: white;
   margin: 2rem auto;
   padding: 2rem;
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  height: 181px;
+  height: 161px;
 }
 
+/* Call-to-Action Button */
 .cta {
   background: var(--primary-green);
   color: white;
@@ -89,12 +93,14 @@ body {
   background: var(--dark-green);
 }
 
+/* Fleet Grid */
 .fleet-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
 }
 
+/* Aircraft Card */
 .aircraft-card {
   background: white;
   border-radius: 6px;
@@ -108,6 +114,7 @@ body {
   transform: translateY(-5px);
 }
 
+/* About Page Sections */
 .about-section {
   margin-top: 2rem;
   padding: 2rem;
@@ -115,9 +122,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   max-width: 600px;
-  margin: 10 auto;
-  text-align: center;
   margin: 2rem auto;
+  text-align: center;
 }
 
 .about-section h3 {
@@ -133,6 +139,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Slideshow */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -150,11 +157,11 @@ body {
   object-fit: cover;
 }
 
+/* Next & Previous Buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -173,6 +180,7 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
+/* Dots */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -188,6 +196,7 @@ body {
   background-color: #717171;
 }
 
+/* Fading Animation */
 .fade {
   animation-name: fade;
   animation-duration: 3s;
@@ -198,6 +207,7 @@ body {
   to {opacity: 1}
 }
 
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .logo-link img {
     height: 40px;
