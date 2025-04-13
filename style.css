@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   background: var(--bg-light);
   color: var(--text-dark);
   display: flex;
@@ -26,12 +26,13 @@ body {
 
 /* Header */
 .site-header {
-  height: 75px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: var(--primary-green);
-  padding: 0 1rem;
+  padding: 1rem;
+  height: 75px;
 }
 
 .logo-link img {
@@ -219,8 +220,8 @@ body {
   }
 
   .site-header {
-    height: 60px;
-    padding: 0 0.5rem;
+    
+    padding: 0.5rem;
   }
 
   .main-nav a {
