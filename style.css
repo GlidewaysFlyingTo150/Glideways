@@ -50,7 +50,7 @@ body {
   text-decoration: underline;
 }
 
-/* Main content grows to push footer down */
+/* Main content area grows to push footer down */
 .content {
   flex: 1;
   padding: 2rem;
@@ -75,7 +75,7 @@ body {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  height: 161px;
+  height: 181px;
 }
 
 /* Call-to-Action Button */
