@@ -30,7 +30,7 @@ body {
   justify-content: space-between;
   background: var(--primary-green);
   padding: 1rem;
-  height: 70px;
+  height: 75px;
 }
 
 .logo-link img,
@@ -67,7 +67,7 @@ body {
   background: white;
   margin: 2rem auto;
   padding: 2rem;
-  max-width: 800px;
+  width: 800px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
