@@ -1,6 +1,3 @@
-/*======================================
-  Global Variables
-======================================*/
 :root {
   /* Define brand colors and background/text defaults */
   --primary-green: #2ecc71;
@@ -9,9 +6,6 @@
   --text-dark:    #1a1a1a;
 }
 
-/*======================================
-  Reset & Base Styles
-======================================*/
 * {
   box-sizing: border-box; /* Include padding/border in element's width/height */
   margin: 0;
@@ -80,9 +74,6 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/*======================================
-  Call-to-Action Button
-======================================*/
 .cta {
   background: var(--primary-green);
   color: white;
@@ -120,7 +111,7 @@ body {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  /* Removed max-width to inherit content wrapper width */
+  max-wdith: 900px;
   text-align: center;
 }
 .about-section h3 {
