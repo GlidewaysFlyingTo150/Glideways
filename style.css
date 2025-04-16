@@ -20,10 +20,11 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
   background: var(--bg-light);
   color: var(--text-dark);
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
+/* Header */
 .site-header {
   display: flex;
   align-items: center;
@@ -35,20 +36,21 @@ body {
 
 .logo-link img,
 .logo {
-  height: 50px;  
+  height: 50px;
   width: auto;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .main-nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;   
+  margin: 0 1rem;
 }
 .main-nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content grows to push footer down */
 .content {
   flex: 1;
   padding: 2rem;
@@ -56,6 +58,7 @@ body {
   margin: 0 auto;
 }
 
+/* Footer */
 .site-footer {
   background: var(--primary-green);
   color: white;
@@ -63,16 +66,19 @@ body {
   padding: 1rem;
 }
 
+/* Homepage Hero Section */
 .hero {
   background: white;
   margin: 2rem auto;
   padding: 2rem;
-  width: 800px;
+  max-width: 800px;
+  width: 90%;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Call-to-Action Button */
 .cta {
   background: var(--primary-green);
   color: white;
@@ -86,6 +92,7 @@ body {
   background: var(--dark-green);
 }
 
+/* Fleet Grid */
 .fleet-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -104,13 +111,15 @@ body {
   transform: translateY(-5px);
 }
 
+/* About Page Sections */
 .about-section {
   margin: 2rem auto;
   padding: 2rem;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  width: 800px;
+  max-width: 800px;
+  width: 90%;
   text-align: center;
 }
 .about-section h3 {
@@ -124,6 +133,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Slideshow */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -179,6 +189,7 @@ body {
   to {opacity: 1}
 }
 
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .logo-link img {
     height: 40px;
@@ -199,15 +210,10 @@ body {
   flex-wrap: wrap;
 }
 
-.aircraft-description {
-  flex: 1 1 50%;
-  padding: 1rem;
-}
-
+.aircraft-description,
 .aircraft-image {
   flex: 1 1 50%;
   padding: 1rem;
-  text-align: center;
 }
 
 .aircraft-image img {
