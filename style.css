@@ -260,5 +260,8 @@ body {
 h2 a:hover {
   text-decoration: underline;
 }
-  
+
+p a {
+  color: inherit;
+  text-decoration: none;
 }
