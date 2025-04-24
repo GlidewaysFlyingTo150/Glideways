@@ -24,7 +24,6 @@ body {
   flex-direction: column;
 }
 
-/* Header */
 .site-header {
   display: flex;
   align-items: center;
@@ -32,6 +31,9 @@ body {
   background: var(--primary-green);
   padding: 1rem;
   height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-link img,
@@ -39,6 +41,7 @@ body {
   height: 50px;
   width: auto;
   object-fit: contain;
+  
 }
 
 .main-nav a {
@@ -50,7 +53,6 @@ body {
   text-decoration: underline;
 }
 
-/* Main content grows to push footer down */
 .content {
   flex: 1;
   padding: 2rem;
@@ -58,7 +60,6 @@ body {
   margin: 0 auto;
 }
 
-/* Footer */
 .site-footer {
   background: var(--primary-green);
   color: white;
@@ -66,7 +67,6 @@ body {
   padding: 1rem;
 }
 
-/* Homepage Hero Section */
 .hero {
   background: white;
   margin: 2rem auto;
@@ -78,7 +78,6 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Call-to-Action Button */
 .cta {
   background: var(--primary-green);
   color: white;
@@ -92,7 +91,6 @@ body {
   background: var(--dark-green);
 }
 
-/* Fleet Grid */
 .fleet-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -111,7 +109,6 @@ body {
   transform: translateY(-5px);
 }
 
-/* About Page Sections */
 .about-section {
   margin: 2rem auto;
   padding: 2rem;
@@ -133,7 +130,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Slideshow */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -189,7 +185,6 @@ body {
   to {opacity: 1}
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .logo-link img {
     height: 40px;
