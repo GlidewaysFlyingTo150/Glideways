@@ -200,20 +200,22 @@ body {
 
 .aircraft {
   display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
   flex-wrap: wrap;
-  width: 800px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .aircraft-description,
 .aircraft-image {
-  flex: 1 1 50%;
+  flex: 1 1 400px;
+  max-width: 500px;
   padding: 1rem;
 }
 
 .aircraft-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
